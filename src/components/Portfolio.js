@@ -14,7 +14,7 @@ import {
 } from "@material-ui/core";
 import project1 from "../images/sb.jpg";
 import project2 from "../images/weatherapp.jpg";
-import project3 from "../images/react-redux.jpg";
+import project3 from "../images/ramheader.jpg";
 import project4 from "../images/mern-stack.jpg";
 
 const useStyles = makeStyles({
@@ -140,7 +140,7 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    Project 3
+                    Rick and Morty Dead or Alive
                   </Typography>
                   <Typography
                     variant="body2"
@@ -157,10 +157,20 @@ const Portfolio = () => {
               </CardActionArea>
 
               <CardActions>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/cristina-altreche/rick-and-morty"
+                  target="_blank"
+                >
                   Code Source
                 </Button>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://rickandmorty-deadoralive.netlify.app/"
+                  target="_blank"
+                >
                   Live Demo
                 </Button>
               </CardActions>
