@@ -15,7 +15,7 @@ import {
 import project1 from "../images/sb.jpg";
 import project2 from "../images/weatherapp.jpg";
 import project3 from "../images/ramheader.jpg";
-import project4 from "../images/mern-stack.jpg";
+import project4 from "../images/potluck.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -140,18 +140,17 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    Rick and Morty Dead or Alive
+                    Dead or Alive
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    This React application fetches data from the Rick and Morty
+                    API. I made use of Function components, component state, and
+                    side effects. A combinaton of Reactstrap and CSS were used
+                    for styling.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -188,26 +187,34 @@ const Portfolio = () => {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
-                    Project 4
+                    Potluck Planner
                   </Typography>
                   <Typography
                     variant="body2"
                     color="textSecondary"
                     component="p"
                   >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    My very first team build at Lambda where I was in charge of
+                    UI/UX. This site was created using strictly HTML and CSS.
+                    Complete with a Landing, About, and Contact section.
                   </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/Potluck-Planner-2/marketing/tree/master"
+                  target="_blank"
+                >
                   Code Source
                 </Button>
-                <Button size="small" color="primary">
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://potluckplannersite.netlify.app/"
+                  target="_blank"
+                >
                   Live Demo
                 </Button>
               </CardActions>
