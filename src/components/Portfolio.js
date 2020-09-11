@@ -16,6 +16,7 @@ import project1 from "../images/sb.jpg";
 import project2 from "../images/weatherapp.jpg";
 import project3 from "../images/ramheader.jpg";
 import project4 from "../images/potluck.jpg";
+import project5 from "../images/playful.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -36,7 +37,7 @@ const Portfolio = () => {
         <Navbar />
         <Grid container justify="center">
           {/* Project 1 */}
-          <Grid item xs={12} sm={8} md={6}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -83,7 +84,7 @@ const Portfolio = () => {
             </Card>
           </Grid>
           {/* Project 2 */}
-          <Grid item xs={12} sm={8} md={6}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -129,7 +130,7 @@ const Portfolio = () => {
             </Card>
           </Grid>
           {/* Project 3 */}
-          <Grid item xs={12} sm={8} md={6}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -176,7 +177,7 @@ const Portfolio = () => {
             </Card>
           </Grid>
           {/* Project 4 */}
-          <Grid item xs={12} sm={8} md={6}>
+          <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardMedia
@@ -213,6 +214,49 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://potluckplannersite.netlify.app/"
+                  target="_blank"
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          {/* Project 5 */}
+          <Grid item xs={12} md={6} lg={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Project 4"
+                  height="140"
+                  image={project5}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Playful Portfolio
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    Single page portfolio created using HTML & LESS. I learned the importance of CSS preprocessors with this project. They make the code much more readable and organized. 
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/cristina-altreche/Preprocessing-I"
+                  target="_blank"
+                >
+                  Code Source
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://playfulportfolio.netlify.app/"
                   target="_blank"
                 >
                   Live Demo
