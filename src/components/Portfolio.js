@@ -27,6 +27,13 @@ const useStyles = makeStyles({
     maxWidth: 345,
     margin: "5rem auto",
   },
+  tech: {
+    color: "#555",
+  },
+  button: {
+    border: "1px solid black",
+    color: "black",
+  },
 });
 
 const Portfolio = () => {
@@ -56,13 +63,17 @@ const Portfolio = () => {
                     component="p"
                   >
                     Full application where you can add your private or public
-                    stories after logging in with your Google account. Login is set up with Passport's Google OAuth strategy.
+                    stories after logging in with your Google account. Login is
+                    set up with Passport's Google OAuth strategy.
                   </Typography>
-                  <br/>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Languages & Libraries: Node.js, MongoDB, Express
+                  <hr />
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.tech}
+                  >
+                    Node.js, MongoDB, Express
                   </Typography>
-                 
                 </CardContent>
               </CardActionArea>
 
@@ -72,14 +83,16 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/cristina-altreche/node-app-oauth"
                   target="_blank"
+                  className={classes.button}
                 >
-                  Code Source
+                  Code
                 </Button>
                 <Button
                   size="small"
                   color="primary"
                   href="https://story-book-ca.herokuapp.com/"
                   target="_blank"
+                  className={classes.button}
                 >
                   Live Demo
                 </Button>
@@ -109,9 +122,13 @@ const Portfolio = () => {
                     data from mapbox.com and weatherstock.com. Try to look up
                     your current locations weather!
                   </Typography>
-                  <br/>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Languages & Libraries: Node.js, Express
+                  <hr />
+                  <Typography
+                    variant="body2"
+                    component="p"
+                    className={classes.tech}
+                  >
+                    Node.js, Express
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -122,14 +139,16 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/cristina-altreche/weather-app-nodejs"
                   target="_blank"
+                  className={classes.button}
                 >
-                  Code Source
+                  Code
                 </Button>
                 <Button
                   size="small"
                   color="primary"
                   href="https://altre-weather-app.herokuapp.com/"
                   target="_blank"
+                  className={classes.button}
                 >
                   Live Demo
                 </Button>
@@ -160,9 +179,13 @@ const Portfolio = () => {
                     side effects. A combinaton of Reactstrap and CSS were used
                     for styling.
                   </Typography>
-                  <br/>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Languages & Libraries: React, Reactstrap, CSS
+                  <hr />
+                  <Typography
+                    variant="body2"
+                    className={classes.tech}
+                    component="p"
+                  >
+                    React, Reactstrap, CSS
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -173,14 +196,16 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/cristina-altreche/rick-and-morty"
                   target="_blank"
+                  className={classes.button}
                 >
-                  Code Source
+                  Code
                 </Button>
                 <Button
                   size="small"
                   color="primary"
                   href="https://rickandmorty-deadoralive.netlify.app/"
                   target="_blank"
+                  className={classes.button}
                 >
                   Live Demo
                 </Button>
@@ -210,9 +235,9 @@ const Portfolio = () => {
                     UI/UX. This site was created using strictly HTML and CSS.
                     Complete with a Landing, About, and Contact section.
                   </Typography>
-                  <br/>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Languages & Libraries: HTML, CSS
+                  <hr />
+                  <Typography variant="body2"  className={classes.tech} component="p">
+                    HTML, CSS
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -222,14 +247,16 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/Potluck-Planner-2/marketing/tree/master"
                   target="_blank"
+                  className={classes.button}
                 >
-                  Code Source
+                  Code
                 </Button>
                 <Button
                   size="small"
                   color="primary"
                   href="https://potluckplannersite.netlify.app/"
                   target="_blank"
+                  className={classes.button}
                 >
                   Live Demo
                 </Button>
@@ -255,11 +282,13 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    Single page portfolio created using HTML & LESS. I learned the importance of CSS preprocessors with this project. They make the code much more readable and organized. 
+                    Single page portfolio created using HTML & LESS. I learned
+                    the importance of CSS preprocessors with this project. They
+                    make the code much more readable and organized.
                   </Typography>
-                  <br/>
-                  <Typography variant="body2" color="textSecondary" component="p">
-                    Languages & Libraries: HTML, LESS
+                  <hr />
+                  <Typography variant="body2"  className={classes.tech} component="p">
+                    HTML, LESS
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -269,14 +298,16 @@ const Portfolio = () => {
                   color="primary"
                   href="https://github.com/cristina-altreche/Preprocessing-I"
                   target="_blank"
+                  className={classes.button}
                 >
-                  Code Source
+                  Code
                 </Button>
                 <Button
                   size="small"
                   color="primary"
                   href="https://playfulportfolio.netlify.app/"
                   target="_blank"
+                  className={classes.button}
                 >
                   Live Demo
                 </Button>
