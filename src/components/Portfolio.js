@@ -56,10 +56,13 @@ const Portfolio = () => {
                     component="p"
                   >
                     Full application where you can add your private or public
-                    stories after logging in with your Google account. This app
-                    is using Node.js, Express, MongoDB, Passport with a Google
-                    OAuth strategy.
+                    stories after logging in with your Google account. Login is set up with Passport's Google OAuth strategy.
                   </Typography>
+                  <br/>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    Languages & Libraries: Node.js, MongoDB, Express
+                  </Typography>
+                 
                 </CardContent>
               </CardActionArea>
 
@@ -105,6 +108,10 @@ const Portfolio = () => {
                     The Weather app is a Node and Express application. It uses
                     data from mapbox.com and weatherstock.com. Try to look up
                     your current locations weather!
+                  </Typography>
+                  <br/>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    Languages & Libraries: Node.js, Express
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -153,6 +160,10 @@ const Portfolio = () => {
                     side effects. A combinaton of Reactstrap and CSS were used
                     for styling.
                   </Typography>
+                  <br/>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    Languages & Libraries: React, Reactstrap, CSS
+                  </Typography>
                 </CardContent>
               </CardActionArea>
 
@@ -199,6 +210,10 @@ const Portfolio = () => {
                     UI/UX. This site was created using strictly HTML and CSS.
                     Complete with a Landing, About, and Contact section.
                   </Typography>
+                  <br/>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    Languages & Libraries: HTML, CSS
+                  </Typography>
                 </CardContent>
               </CardActionArea>
               <CardActions>
@@ -241,6 +256,10 @@ const Portfolio = () => {
                     component="p"
                   >
                     Single page portfolio created using HTML & LESS. I learned the importance of CSS preprocessors with this project. They make the code much more readable and organized. 
+                  </Typography>
+                  <br/>
+                  <Typography variant="body2" color="textSecondary" component="p">
+                    Languages & Libraries: HTML, LESS
                   </Typography>
                 </CardContent>
               </CardActionArea>
