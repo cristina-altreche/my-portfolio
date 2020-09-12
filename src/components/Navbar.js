@@ -15,13 +15,7 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import {
-  ArrowBack,
-  // AssignmentInd,
-  Home,
-  Apps,
-  ContactMail,
-} from "@material-ui/icons";
+import { ArrowBack, Person, Home, Apps, ContactMail } from "@material-ui/icons";
 import avatar from "../myface.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -49,11 +43,11 @@ const menuItems = [
     listText: "Home",
     listPath: "/",
   },
-  // {
-  //   listIcon: <AssignmentInd />,
-  //   listText: "Resume",
-  //   listPath: "/resume",
-  // },
+  {
+    listIcon: <Person />,
+    listText: "About",
+    listPath: "/about",
+  },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
@@ -102,7 +96,10 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: 'transparent', boxShadow: 'none'}}>
+        <AppBar
+          position="static"
+          style={{ background: "transparent", boxShadow: "none" }}
+        >
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <ArrowBack style={{ color: "#3ff2ec" }}></ArrowBack>

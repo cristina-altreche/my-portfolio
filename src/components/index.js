@@ -32,7 +32,6 @@ const Home = () => {
               type: "square",
               stroke: {
                 width: 1, 
-                color: 'tomato'
               }
             },
             size: {
