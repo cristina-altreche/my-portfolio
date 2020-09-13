@@ -13,7 +13,8 @@ import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import { MDCTextField } from "@material/textfield";
+import "@material/textfield";
+
 
 const useStyles = makeStyles((theme) => ({
   form: {
