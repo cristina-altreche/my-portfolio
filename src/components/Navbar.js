@@ -107,7 +107,15 @@ const Navbar = () => {
             <Typography variant="h5" style={{ color: "white" }}>
               Portfolio
             </Typography>
-        
+            <div>
+              <IconButton button component={Link} to="/">
+                <Home
+                  style={{ color: "white" }}
+                  
+                />
+              </IconButton>
+            </div>
+
             <MobileRightMenuSlider
               anchor="right"
               open={state.right}
