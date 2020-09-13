@@ -1,6 +1,13 @@
 import React from "react";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import { TextField, Typography, Button, Grid, Box } from "@material-ui/core";
+import {
+  TextField,
+  Typography,
+  Button,
+  Grid,
+  Box,
+  TextareaAutosize,
+} from "@material-ui/core";
 import SendIcon from "@material-ui/icons/Send";
 import Navbar from "./Navbar";
 
@@ -56,7 +63,7 @@ const Contacts = () => {
               textTransform: "uppercase",
             }}
           >
-            contact me...
+            contact
           </Typography>
           <InputField
             fullWidth={true}
@@ -84,7 +91,6 @@ const Contacts = () => {
             margin="dense"
             size="medium"
           />
-
           <br />
           <Button
             className={classes.button}

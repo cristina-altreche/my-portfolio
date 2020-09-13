@@ -7,6 +7,7 @@ import {
   CardMedia,
   CardContent,
   Typography,
+  Avatar,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
 import aboutme from "../images/aboutme.jpg";
@@ -19,16 +20,21 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     flexDirection: "row",
-    marginTop: 175,
+    marginTop: 145,
   },
   cardContainer: {
     maxWidth: 450,
-    margin: "1.5rem 1rem",
+    margin: "0 1rem",
     color: "white",
   },
   hr: {
     border: "1px solid #3ff2ec",
   },
+ 
+ cardImage: {
+     borderRadius: "50%",
+     padding: "2rem"
+ }
 });
 
 const About = () => {
@@ -38,14 +44,15 @@ const About = () => {
       <Navbar />
       <Grid container justify="center" className={classes.gridContainer}>
         <Grid item xs={12} md={6} className={classes.cardContainer}>
-          <CardActionArea>
+        <CardActionArea className={classes.cardImageContainer}>
             <CardMedia
               component="img"
               alt="Me"
               height="400px"
               image={aboutme}
+              className={classes.cardImage}
             />
-          </CardActionArea>
+         </CardActionArea>
         </Grid>
         <Grid item xs={12} md={6} className={classes.cardContainer}>
           <CardActionArea>
@@ -58,11 +65,14 @@ const About = () => {
                 <br />
                 <br /> As a person who is extremely detailed and empathetic, I
                 take the users experience into careful consideration througout
-                the development cycle for both front-end and back-end. Along with clean semantic code and being resourceful, I believe
-                communication is what drives any application to successful completion. 
-                <br/>
-                <br/>
-                Outside of continous learning each day I love hanging out with my family, fishing, and going to the gym. 
+                the development cycle for both front-end and back-end. Along
+                with clean semantic code and being resourceful, I believe
+                communication is what drives any application to successful
+                completion.
+                <br />
+                <br />
+                Outside of continous learning each day I love hanging out with
+                my family, fishing, and going to the gym.
               </Typography>
             </CardContent>
           </CardActionArea>
