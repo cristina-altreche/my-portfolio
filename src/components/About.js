@@ -10,7 +10,7 @@ import {
   Avatar,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
-import aboutme from "../images/aboutme.jpg";
+import aboutme from "../images/profphoto1.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
