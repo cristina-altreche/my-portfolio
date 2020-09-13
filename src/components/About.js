@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
-import aboutme from "../images/profphoto1.jpg";
+import aboutme from "../images/profphoto3.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {

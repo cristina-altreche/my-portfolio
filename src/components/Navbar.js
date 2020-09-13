@@ -16,7 +16,7 @@ import {
   Box,
 } from "@material-ui/core";
 import { ArrowBack, Person, Home, Apps, ContactMail } from "@material-ui/icons";
-import avatar from "../images/profphoto1.jpg";
+import avatar from "../images/profphoto3.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
 //Css Styles
