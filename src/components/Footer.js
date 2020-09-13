@@ -4,6 +4,7 @@ import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
+
 const useStyles = makeStyles({
   root: {
     "& .MuiBottomNavigationAction-root": {
