@@ -17,6 +17,7 @@ import project2 from "../images/weatherapp.jpg";
 import project3 from "../images/ramheader.jpg";
 import project4 from "../images/potluck.jpg";
 import project5 from "../images/playful.jpg";
+import project6 from "../images/todo.jpg";
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -212,7 +213,65 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
+
           {/* Project 4 */}
+          <Grid item xs={12} md={6} lg={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Project 3"
+                  height="140"
+                  image={project6}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Todo App
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    This React application fetches data from the Rick and Morty
+                    API. I made use of Function components, component state, and
+                    side effects. A combinaton of Reactstrap and CSS were used
+                    for styling.
+                  </Typography>
+                  <hr />
+                  <Typography
+                    variant="body2"
+                    className={classes.tech}
+                    component="p"
+                  >
+                    React, CSS
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/cristina-altreche/todo-app/tree/master"
+                  target="_blank"
+                  className={classes.button}
+                >
+                  Code
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://todoappca.netlify.app"
+                  target="_blank"
+                  className={classes.button}
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+          {/* Project 5 */}
           <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
@@ -236,7 +295,11 @@ const Portfolio = () => {
                     Complete with a Landing, About, and Contact section.
                   </Typography>
                   <hr />
-                  <Typography variant="body2"  className={classes.tech} component="p">
+                  <Typography
+                    variant="body2"
+                    className={classes.tech}
+                    component="p"
+                  >
                     HTML, CSS
                   </Typography>
                 </CardContent>
@@ -263,7 +326,7 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-          {/* Project 5 */}
+          {/* Project 6 */}
           <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
@@ -287,7 +350,11 @@ const Portfolio = () => {
                     make the code much more readable and organized.
                   </Typography>
                   <hr />
-                  <Typography variant="body2"  className={classes.tech} component="p">
+                  <Typography
+                    variant="body2"
+                    className={classes.tech}
+                    component="p"
+                  >
                     HTML, LESS
                   </Typography>
                 </CardContent>
