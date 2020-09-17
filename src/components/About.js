@@ -66,7 +66,7 @@ const About = () => {
                 take the users experience into careful consideration througout
                 the development cycle for both front-end and back-end. Along
                 with clean semantic code and being resourceful, I believe
-                communication is what drives any application to successful
+                communication is what drives any web application to successful
                 completion.
                 <br />
                 <br />

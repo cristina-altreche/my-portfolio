@@ -15,9 +15,10 @@ import {
 import project1 from "../images/sb.jpg";
 import project2 from "../images/weatherapp.jpg";
 import project3 from "../images/ramheader.jpg";
-import project4 from "../images/potluck.jpg";
-import project5 from "../images/playful.jpg";
-import project6 from "../images/todo.jpg";
+import project4 from "../images/todo.jpg";
+import project5 from "../images/potluck.jpg";
+import project6 from "../images/playful.jpg";
+
 
 const useStyles = makeStyles({
   mainContainer: {
@@ -213,7 +214,6 @@ const Portfolio = () => {
               </CardActions>
             </Card>
           </Grid>
-
           {/* Project 4 */}
           <Grid item xs={12} md={6} lg={4}>
             <Card className={classes.cardContainer}>
@@ -222,7 +222,7 @@ const Portfolio = () => {
                   component="img"
                   alt="Project 3"
                   height="140"
-                  image={project6}
+                  image={project4}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
@@ -233,10 +233,10 @@ const Portfolio = () => {
                     color="textSecondary"
                     component="p"
                   >
-                    This React application fetches data from the Rick and Morty
-                    API. I made use of Function components, component state, and
-                    side effects. A combinaton of Reactstrap and CSS were used
-                    for styling.
+                    For the React Todo project I was able to explore the reducer
+                    pattern. I gained an understanding of what immutability is,
+                    reducers, actions, dispatch, and how to use the reducer
+                    hook.
                   </Typography>
                   <hr />
                   <Typography
@@ -279,7 +279,7 @@ const Portfolio = () => {
                   component="img"
                   alt="Project 4"
                   height="140"
-                  image={project4}
+                  image={project5}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">
@@ -334,7 +334,7 @@ const Portfolio = () => {
                   component="img"
                   alt="Project 4"
                   height="140"
-                  image={project5}
+                  image={project6}
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5">

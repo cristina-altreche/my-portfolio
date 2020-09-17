@@ -18,42 +18,46 @@ const Home = () => {
       <Navbar />
       <Header />
       <Particles
-      canvasClassName={classes.particlesCanva}
+        canvasClassName={classes.particlesCanva}
         params={{
           particles: {
             number: {
-              value: 30,
+              value: 80,
               density: {
                 enable: true,
-                value_area: 800
-              }
+                value_area: 800,
+              },
             },
+            color: { value: "#ffffff" },
             shape: {
-              type: "square",
+              type: "circle",
               stroke: {
-                width: 1, 
-              }
+                width: 0,
+                color: "#000000",
+              },
+
+              polygon:{"nb_sides":5}
             },
             size: {
-              value:3,
+              value: 3,
               random: true,
               anim: {
-                enable: true,
-                speed: 6,
+                enable: false,
+                speed: 40,
                 size_min: 0.1,
-                sync: true
-              }
+                sync: false,
+              },
             },
-            opacity:{
-              value: 1,
+            opacity: {
+              value: 0.5,
               random: true,
               anim: {
-                enable: true,
-                speed: 1, 
+                enable: false,
+                speed: 1,
                 opacity_min: 0.1,
-                sync: true
-              }
-            }
+                sync: false,
+              },
+            },
           },
         }}
       />

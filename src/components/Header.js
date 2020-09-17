@@ -44,21 +44,14 @@ const Header = () => {
       </Grid>
 
       <Typography className={classes.title} variant="h4">
-        <Typed
-          strings={["Cristina Altreche"]}
-          typeSpeed={60}
-        />
+        <Typed strings={["Cristina Altreche"]} typeSpeed={50} />
       </Typography>
       <br />
       <Typography className={classes.subtitle} variant="h5">
         <Typed
-          strings={[
-            "MERN Stack",
-            "Web Developer",
-            "Web Design",
-          ]}
-          typeSpeed={60}
-          backspeed={20}
+          strings={["Full Stack", "Web Developer", "Web Design", "UI/UX"]}
+          typeSpeed={50}
+          backspeed={50}
           loop
         />
       </Typography>
