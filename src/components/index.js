@@ -39,7 +39,7 @@ const Home = () => {
               polygon:{"nb_sides":5}
             },
             size: {
-              value: 3,
+              value: 1,
               random: true,
               anim: {
                 enable: false,
