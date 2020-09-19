@@ -5,7 +5,8 @@ import "./App.css";
 import Home from "./components";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
-import Contacts from "./components/Contacts";
+// import Contacts from "./components/Contacts";
+import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/about" component={About} />
-      <Route path="/contacts" component={Contacts} />
+      {/* <Route path="/contacts" component={Contacts} /> */}
+      <Route path="/resume" component={Resume}/>
     </>
   );
 }

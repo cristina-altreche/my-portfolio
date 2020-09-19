@@ -13,9 +13,10 @@ const useStyles = makeStyles({
     },
     "& .MuiSvgIcon-root": {
       fill: "white",
+      fontSize: "2rem",
       "&:hover": {
         fill: "#3ff2ec",
-        fontSize: "1.8rem",
+        fontSize: "2.2rem",
       },
     },
   },

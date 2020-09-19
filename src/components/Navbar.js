@@ -53,10 +53,15 @@ const menuItems = [
     listText: "Portfolio",
     listPath: "/portfolio",
   },
+  // {
+  //   listIcon: <ContactMail />,
+  //   listText: "Contact",
+  //   listPath: "/contacts",
+  // },
   {
     listIcon: <ContactMail />,
-    listText: "Contact",
-    listPath: "/contacts",
+    listText: "Resume",
+    listPath: "/resume",
   },
 ];
 
