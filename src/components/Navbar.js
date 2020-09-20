@@ -15,7 +15,7 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import { ArrowBack, Person, Home, Apps, ContactMail } from "@material-ui/icons";
+import { ArrowBack, Person, Home, Apps, AssignmentInd } from "@material-ui/icons";
 import avatar from "../images/profphoto3.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -53,13 +53,8 @@ const menuItems = [
     listText: "Portfolio",
     listPath: "/portfolio",
   },
-  // {
-  //   listIcon: <ContactMail />,
-  //   listText: "Contact",
-  //   listPath: "/contacts",
-  // },
   {
-    listIcon: <ContactMail />,
+    listIcon: <AssignmentInd />,
     listText: "Resume",
     listPath: "/resume",
   },

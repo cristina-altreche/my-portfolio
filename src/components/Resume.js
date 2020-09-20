@@ -5,7 +5,9 @@ import Navbar from "./Navbar";
 import { Document, Page, pdfjs } from "react-pdf";
 import PDF from "../images/CAResume.pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 const url = "https://drive.google.com/file/d/1fcocrjtfH9QLApObHN8PMcyva-VBkAX4/view?usp=sharing"
+
 const useStyles = makeStyles({
   container: {
     display: "flex",
@@ -14,7 +16,10 @@ const useStyles = makeStyles({
   },
   btnContainer: {
     height: "5rem",
-    marginTop: "1rem"
+    marginTop: "1rem",
+    // display: "flex",
+    // flexDirection: "row",
+    // justifyContent: "space-between"
   },
   btn: {
     border: "1px solid white",
@@ -38,6 +43,9 @@ const Resume = () => {
       
       <div className={classes.btnContainer}>
         <Button href={url} target='blank' className={classes.btn}>DOWNLOAD</Button>
+      </div>
+      <div>
+
       </div>
 
       <Document file={PDF}>

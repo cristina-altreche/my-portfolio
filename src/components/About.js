@@ -7,11 +7,25 @@ import {
   CardMedia,
   CardContent,
   Typography,
+  BottomNavigation,
+  BottomNavigationAction,
 } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Navbar from "./Navbar";
 import aboutme from "../images/profphoto3.jpg";
 
 const useStyles = makeStyles({
+  root: {
+    "& .MuiSvgIcon-root": {
+      fill: "white",
+      fontSize: "2rem",
+      "&:hover": {
+        fill: "#3ff2ec",
+        
+      },
+    }
+  },
   mainContainer: {
     height: "100vh",
   },
@@ -29,11 +43,22 @@ const useStyles = makeStyles({
   hr: {
     border: "1px solid #3ff2ec",
   },
- 
- cardImage: {
-     borderRadius: "50%",
-     padding: "2rem"
- }
+
+  cardImage: {
+    borderRadius: "50%",
+    padding: "2rem",
+  },
+  social: {
+    fontSize: "2.1rem",
+    marginRight: "1rem",
+    "&:hover": {
+      fill: "#3ff2ec",
+    },
+  },
+  bottomNav: {
+    backgroundColor: "transparent",
+    justifyContent: "start"
+  }
 });
 
 const About = () => {
@@ -43,7 +68,7 @@ const About = () => {
       <Navbar />
       <Grid container justify="center" className={classes.gridContainer}>
         <Grid item xs={12} md={6} className={classes.cardContainer}>
-        <CardActionArea className={classes.cardImageContainer}>
+          <CardActionArea className={classes.cardImageContainer}>
             <CardMedia
               component="img"
               alt="Me"
@@ -51,7 +76,7 @@ const About = () => {
               image={aboutme}
               className={classes.cardImage}
             />
-         </CardActionArea>
+          </CardActionArea>
         </Grid>
         <Grid item xs={12} md={6} className={classes.cardContainer}>
           <CardActionArea>
@@ -75,6 +100,33 @@ const About = () => {
               </Typography>
             </CardContent>
           </CardActionArea>
+          <BottomNavigation className={classes.bottomNav}>
+            <BottomNavigationAction
+              className={classes.root}
+              style={{ padding: 0, flex: 0 }}
+              icon={<GitHubIcon />}
+              href="https://github.com/cristina-altreche"
+              target="blank"
+            />
+            <BottomNavigationAction
+             className={classes.root}
+              style={{ padding: 0, flex: 0 }}
+              icon={<LinkedInIcon />}
+              href="https://www.linkedin.com/in/cristina-alt/"
+              target="blank"
+            />
+          </BottomNavigation>
+          {/* <br />
+              <GitHubIcon
+                className={classes.social}
+                href="https://github.com/cristina-altreche"
+                target="blank"
+              />
+              <LinkedInIcon
+                className={classes.social}
+                href="https://www.linkedin.com/in/cristina-alt/"
+                target="blank"
+              /> */}
         </Grid>
       </Grid>
     </Box>
