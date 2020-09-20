@@ -88,7 +88,7 @@ const About = () => {
                 for work.
                 <br />
                 <br /> As a person who is extremely detailed and empathetic, I
-                take the users experience into careful consideration througout
+                take the user's experience into careful consideration throughout
                 the development cycle for both front-end and back-end. Along
                 with clean semantic code and being resourceful, I believe
                 communication is what drives any web application to successful
