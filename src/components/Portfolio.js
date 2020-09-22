@@ -18,6 +18,7 @@ import project3 from "../images/ramheader.jpg";
 import project4 from "../images/todo.jpg";
 import project5 from "../images/potluck.jpg";
 import project6 from "../images/playful.jpg";
+import project7 from "../images/bkstore.jpg";
 
 
 const useStyles = makeStyles({
@@ -373,6 +374,59 @@ const Portfolio = () => {
                   size="small"
                   color="primary"
                   href="https://playfulportfolio.netlify.app/"
+                  target="_blank"
+                  className={classes.button}
+                >
+                  Live Demo
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+           {/* Project 7 */}
+           <Grid item xs={12} md={6} lg={4}>
+            <Card className={classes.cardContainer}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  alt="Project 7"
+                  height="140"
+                  image={project7}
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5">
+                    Book Store React
+                  </Typography>
+                  <Typography
+                    variant="body2"
+                    color="textSecondary"
+                    component="p"
+                  >
+                    E-commerce store using React's Context API state management. You have the ability to add and remove items to your cart as well as see the total cost of all your products.
+                  </Typography>
+                  <hr />
+                  <Typography
+                    variant="body2"
+                    className={classes.tech}
+                    component="p"
+                  >
+                    React, SASS, Material-UI
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://github.com/cristina-altreche/react-shopping-cart"
+                  target="_blank"
+                  className={classes.button}
+                >
+                  Code
+                </Button>
+                <Button
+                  size="small"
+                  color="primary"
+                  href="https://ca-bookstore.netlify.app/"
                   target="_blank"
                   className={classes.button}
                 >
